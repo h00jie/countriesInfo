@@ -1,0 +1,70 @@
+
+    body,html{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding:0;
+        background: #475d8b !important;
+        }
+    
+        .searchbar{
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 60px;
+        background-color: #353b48;
+        border-radius: 30px;
+        padding: 10px;
+        }
+    
+        .search_input{
+        font-size : 16px;
+        color: white;
+        border: 0;
+        outline: 0;
+        background: none;
+        width: 0;
+        caret-color:transparent;
+        line-height: 40px;
+        transition: width 0.4s linear;
+        }
+        #searchbar{ padding-top: 25px;}
+        .searchbar:hover > .search_input{
+        padding: 0 10px;
+        width: 450px;
+        caret-color:#555e70;
+        transition: width 0.4s linear;
+        }
+    
+        .searchbar:hover > .search_icon{
+        background: white;
+        color: #172a53;
+        }
+        #result{ opacity: 0;}
+        .search_icon{
+        height: 40px;
+        width: 40px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color:white;
+        }
+        img{ height: 100px;width: 150px;}
+
+
+        /* .container{max-width:100%;margin-left:auto;margin-right:auto;padding-left:10px;padding-right:10px} */
+        /* img{ left: 30%;} */
+        /* h2{  font-size:;margin:255px 0;text-align:center} */
+        li{font-weight: bold; font-size: 16px; border-radius:6px;padding:25px 30px;display:flex;justify-content:space-between;margin-bottom:20px}
+        .table-header{background-color:rgb(120, 130, 131);font-size:1.6em;text-transform: uppercase;letter-spacing:.03em;font-weight: bolder}
+        .table-row{ height: 150px;  background-color:#fff;box-shadow:0 0 9px 0 rgba(0,0,0,.1)}
+        .col-1{flex-basis:10%}
+        .col-2{flex-basis:40%}
+        .col-3,.col-4{flex-basis:25%}
+        @media all and (max-width:767px){
+        .table-header{display:none}
+        li{display:block}
+        .col{flex-basis:100%;display:flex;padding:10px 0}
+        .col:before{color:#6C7A89;padding-right:10px;content:attr(data-label);flex-basis:50%;text-align:center}
+        }
